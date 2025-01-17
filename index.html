@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Student list</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+
+        th, td {
+            border: 1px solid #333;
+            padding: 5px 10px;
+        }
+
+        button {
+            margin-right: 5px;
+        }
+
+        .error {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+<h2>Добавление записей в таблицу</h2>
+
+<form id="data-form" action="#" onsubmit="return false;">
+    <label for="name-input">Имя:</label>
+    <input type="text" id="name-input">
+    <label for="group-input">Группа:</label>
+    <input type="text" id="group-input">
+</form>
+
+<div class="error" id="error-div">Все поля обязательны к заполнению</div>
+
+<br>
+<button id="add-btn">Добавить</button>
+<button id="clear-btn">Очистить все</button>
+
+<table id="data-table">
+    <thead>
+    <tr>
+        <th>Имя</th>
+        <th>Группа</th>
+        <th>Удалить</th>
+    </tr>
+    </thead>
+    <tbody id="data-table-body">
+
+    </tbody>
+</table>
+<script type="text/javascript" src="index.js"></script>
+</body>
+</html>
